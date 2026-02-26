@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In | Splashes Aquatics Swim School</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-light-blue d-flex flex-column" style="min-height: 100vh">
+    <!-- HEADER -->
+    <header>
+      <div class="container nav-container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="Graphics/logo-small.png" alt="Splashes Aquatics Logo" />
+          </a>
+        </div>
+        <!-- Empty space since no menu structure here except Home/Locations, keeping toggle hidden for now as it disrupts layout but preserving base structure -->
+        <nav>
+          <ul class="d-flex list-unstyled gap-20">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locations.html">Locations</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main
+      class="flex-1 d-flex align-center justify-center p-40"
+      style="padding: 40px 0"
+    >
+      <div
+        class="container card shadow-lg text-center"
+        style="max-width: 400px"
+      >
+        <h1 class="text-primary mb-30">Member Sign In</h1>
+        <form action="#" class="text-left" style="text-align: left">
+          <div class="mb-20">
+            <label
+              for="email"
+              class="text-bold"
+              style="display: block; margin-bottom: 8px"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="img-w100 p-12 radius-sm border-ddd"
+              style="padding: 12px; border: 1px solid #ddd; border-radius: 4px"
+              required
+            />
+          </div>
+          <div class="mb-20">
+            <label
+              for="password"
+              class="text-bold"
+              style="display: block; margin-bottom: 8px"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              class="img-w100 p-12 radius-sm border-ddd"
+              style="padding: 12px; border: 1px solid #ddd; border-radius: 4px"
+              required
+            />
+          </div>
+          <div class="mb-30 d-flex justify-between" style="font-size: 0.9rem">
+            <label><input type="checkbox" /> Remember Me</label>
+            <a href="#" class="text-primary">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary img-w100">
+            Sign In
+          </button>
+        </form>
+        <div
+          class="mt-30 pt-20 border-t-eee"
+          style="border-top: 1px solid #eee; padding-top: 20px"
+        >
+          <p>Don't have an account yet?</p>
+          <a
+            href="locations.html"
+            class="text-bold"
+            style="color: var(--accent-orange)"
+            >Register Your Student</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER BOTTOM ONLY -->
+    <footer class="p-20 text-center" style="padding: 20px 0">
+      <div class="container">
+        <p>&copy; 2026 Splashes Aquatics. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
