@@ -110,6 +110,7 @@ a {
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .btn-primary {
@@ -140,38 +141,41 @@ header {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
+  gap: 10px;
 }
 
 .logo a {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0px;
 }
 
 .logo img {
-  height: 75px;
+  height: 55px;
 }
 
-.logo-text {
-    font-family: var(--font-accent);
-    font-size: 2rem;
-    color: var(--primary-blue);
-}
+
 
 nav ul {
   display: flex;
   list-style: none;
+  align-items: center;
+  margin-left: 10px;
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin-right: 15px;
+  white-space: nowrap;
 }
 
 nav ul li a:hover {
   color: var(--primary-blue);
+}
+
+.header-cta {
+  margin-left: auto;
 }
 
 /* --- UTILITY CLASSES --- */
