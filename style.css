@@ -145,8 +145,20 @@ header {
   width: 100%;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .logo img {
   height: 75px;
+}
+
+.logo-text {
+    font-family: var(--font-accent);
+    font-size: 2rem;
+    color: var(--primary-blue);
 }
 
 nav ul {
@@ -544,9 +556,13 @@ footer {
     --header-height: 70px;
   }
 
-  .logo img {
-    height: 50px;
-  }
+    .logo img {
+        height: 50px;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
 
   /* Adjust grids for mobile */
   .grid-2-col {
